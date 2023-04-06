@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Darmowe V-DOLCE (*legit*)</title>
+    <link rel="icon" type="image/x-icon" href="fn.ico">
+    <style>
+        body {
+            margin: 0;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #image-container {
+            width: 25%;
+            height: 600px;
+            width: 900px;
+            border-radius: 10%;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            margin-top: 0%;
+            margin-left: 0%;
+            transition: transform 0.3s ease;
+        }
+
+        #image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        #image-container:hover {
+            transform: scale(1.1);
+        }
+
+        #neon-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: "Articulat CF", sans-serif;
+            font-weight: bold;
+            font-size: 32px;
+            color: rgb(92, 186, 230);
+            text-shadow: 0 0 5px rgb(94, 94, 221), 0 0 10px #00f, 0 0 15px #00f;
+            opacity: 0.7;
+            transition: font-size 0.3s ease, opacity 0.3s ease, transform 3s linear;
+        }
+
+        #image-container:hover #neon-text {
+            font-size: 36px;
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+        #neon-text-2 {
+            position: absolute;
+            top: 57%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            font-family: "Articulat CF", sans-serif;
+            font-weight: bold;
+            font-size: 26px;
+            color: rgb(239, 239, 240);
+            text-shadow: 0 0 5px #00f, 0 0 10px #00f, 0 0 15px #00f;
+            opacity: 0.7;
+            transition: font-size 0.3s ease, opacity 0.3s ease, transform 3s linear;
+        }
+
+        #image-container:hover #neon-text-2 {
+            font-size: 30px;
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div id="image-container">
+        <img src="photo.jpg" alt="Obrazek">
+        <div id="neon-text">DARMOWE V-DOLCE</div>
+        <div id="neon-text-2">Sprawdź nasz generator!</div>
+    </div>
+    <video id="video-background" autoplay loop muted>
+        <source src="trailer.mp4" type="video/mp4">
+    </video>
+    <audio autoplay loop>
+        <source src="lobby.mp3" type="audio/mpeg">
+    </audio>
+    <script>
+        // Przekierowanie po kliknięciu na obrazek
+        document.getElementById("image-container").addEventListener("click", function() {
+            window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+        });
+    </script>
+</body>
+</html>
